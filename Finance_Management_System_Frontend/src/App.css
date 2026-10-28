@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #eeeeee;
+  color: #333333;
+}
+
+/* Main Container */
+.form-container {
+  max-width: 650px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 35px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Main Heading */
+.form-container h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #243b70;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+/* Customer Data Heading */
+.form-heading {
+  text-align: center;
+  font-size: 22px;
+  color: #df5555;
+  margin-bottom: 25px;
+}
+
+/* Form Layout */
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Individual Field */
+.form-field {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Labels */
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444444;
+  margin-bottom: 8px;
+}
+
+/* Input Fields */
+.form-input {
+  width: 100%;
+  height: 44px;
+  padding: 10px 12px;
+  font-size: 15px;
+  color: #333333;
+  background-color: #ffffff;
+  border: 1px solid #d0d0d0;
+  border-radius: 6px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Input Focus */
+.form-input:focus {
+  border-color: #df5555;
+  box-shadow: 0 0 5px rgba(223, 85, 85, 0.2);
+}
+
+/* Submit Button */
+.submit-button {
+  width: 100%;
+  height: 46px;
+  margin-top: 10px;
+  background-color: #df5555;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* Button Hover */
+.submit-button:hover {
+  background-color: #c94343;
+}
+
+/* Keyboard Focus */
+.submit-button:focus-visible {
+  outline: 3px solid #f4aaaa;
+  outline-offset: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .form-container {
+    width: 94%;
+    margin: 20px auto;
+    padding: 22px;
+  }
+
+  .form-container h1 {
+    font-size: 23px;
+  }
+
+  .form-heading {
+    font-size: 20px;
+  }
+
+  .form-container form {
+    gap: 15px;
+  }
+}
